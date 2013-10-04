@@ -16,14 +16,21 @@ PBL_APP_INFO(HTTP_UUID,
     APP_INFO_STANDARD_APP);
 
 ///////////  personalize this part  ///////////
-#define TOTAL_NAM 2
-#define TOTAL_WHO 2
+
+#define TOTAL_NAM 2 //Number of Wemo Switches
+const char *nam_list[] = {"WemoSwitchName",    "WemoSwitchName",    "WemoSwitchName"};
+//add your wemo switch names to the line above separated by a comma except for the last entry as shown in the example. Limit 10 characters. Ex - "Livingroom"
+
+const char *who_list[] = {"trigger@ifttt.com", "trigger@ifttt.com", "trigger@ifttt.com"};
+//add "trigger@ifttt.com" address for each Wemo Switch in the line above separated by a comma except for the last entry as shown in the example.
+
+///////////////////////////////////////////////
+
 #define TOTAL_MSG 3
-const char *nam_list[] = {"Livingroom",        "Bedroom"};
-const char *who_list[] = {"trigger@ifttt.com", "email@address.com"};
+int TOTAL_WHO = TOTAL_NAM;
+
 const char *msg_list[] = {"Toggle", "On", "Off"};
 const char *tmp_list[] = {"Toggle", "On", "Off"};
-///////////////////////////////////////////////
 
 BmpContainer background_image_container;
 
