@@ -19,10 +19,12 @@ PBL_APP_INFO(HTTP_UUID,
 
 #define TOTAL_NAM 2 //Number of Wemo Switches
 const char *nam_list[] = {"WemoSwitchName",    "WemoSwitchName",    "WemoSwitchName"};
-//add your wemo switch names to the line above separated by a comma except for the last entry as shown in the example. Limit 10 characters. Ex - "Livingroom"
+//add your wemo switch names to the line above separated by a comma except for the last 
+//entry as shown in the example. Limit 10 characters. Ex - "Livingroom"
 
 const char *who_list[] = {"trigger@ifttt.com", "trigger@ifttt.com", "trigger@ifttt.com"};
-//add "trigger@ifttt.com" address for each Wemo Switch in the line above separated by a comma except for the last entry as shown in the example.
+//add "trigger@ifttt.com" address for each Wemo Switch in the line above separated by a 
+//comma except for the last entry as shown in the example.
 
 ///////////////////////////////////////////////
 
